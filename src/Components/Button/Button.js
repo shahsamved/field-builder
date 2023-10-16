@@ -8,7 +8,7 @@ export default function Button(props) {
   // Generate a CSS class name based on the button name
   const cssClass = "button " + nameOfButton;
 
-  // Function to clear textboxes and reset form data if the "Cancel" button is clicked
+  // Function to clear textboxes and reset form data if the Cancel button is clicked
   const clearTextboxArea = () => {
     if (props.name === "Cancel") {
       // Clear textboxes and reset form data using the provided props

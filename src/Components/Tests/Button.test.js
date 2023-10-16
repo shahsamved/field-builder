@@ -4,10 +4,10 @@ import Button from '../Button/Button';
 
 describe('Tests Button component', () => {
   it('renders button with the provided name', () => {
-    // Render the Button component with the "Save" button name
+    // Render the Button component with the Save button name
     const { getByText } = render(<Button name="Save" />);
     const buttonElement = getByText(/Save/i);
-    // Assert that the button with the name "Save" is rendered
+    // Assert that the button with the name Save is rendered
     expect(buttonElement).toBeInTheDocument();
   });
 
