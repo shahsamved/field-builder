@@ -91,6 +91,10 @@ export default function Form() {
     } else {
       if (!choicesToSubmit.includes(defaultValue)) {
         // If the default value is not in the options, add it
+        if (choicesToSubmit.length + 1> 50){
+          alert("Cannot have more than 50 choices.");
+          return;
+        } 
         choicesToSubmit.push(defaultValue);
         const defaultValueToBePushed = "\n" + defaultValue;
         setChoices(choices + defaultValueToBePushed);
